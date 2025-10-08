@@ -1,0 +1,39 @@
+/* A-Frame specific CSS */
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+/* Remove default Vite styling for A-Frame */
+body {
+  display: block;
+}
+
+/* A-Frame canvas styles */
+a-scene {
+  display: block;
+  position: relative;
+  width: 100%;
+  height: 100vh;
+}
+
+/* Loading screen customization */
+.a-loader-title {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, sans-serif;
+}
+
+/* Optional: Add overlay UI styles here */
+.overlay-ui {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  color: white;
+  font-family: system-ui, sans-serif;
+  z-index: 999;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 10px 15px;
+  border-radius: 5px;
+}
